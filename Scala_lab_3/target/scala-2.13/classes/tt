@@ -1,0 +1,11 @@
+var names = users
+names = names :+ User("AAverage", average)
+names.map(a=>a.name->a.age).toMap
+
+//    val myMap = Map("word1" -> "foo", "word3" -> "word4", "word5" -> "foo")
+//
+//    // Applying count method
+//    val result = myMap.values.filter { _ == "foo" }.size
+//
+//    // Displays output
+//    println(result)

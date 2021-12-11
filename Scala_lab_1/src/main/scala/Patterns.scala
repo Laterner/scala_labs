@@ -140,9 +140,9 @@ object PatternMatching {
   def testUpdateFood(animal: Animal): Animal = updateFood(animal)
 
   def tests(): Unit = {
-    println(testWinsA(Paper, Rock))
-    println(testWinsA(Scissor, Rock))
-    println(testExtractMammalWeight(Mammal("Human", Meat, 85)))
-    println(testUpdateFood(Bird("Cacadoo", Meat)))
+    println("testWinsA: " + testWinsA(Paper, Rock))
+    println("testWinsA: " + testWinsA(Scissor, Rock))
+    println("testExtractMammalWeight: " + testExtractMammalWeight(Mammal("Human", Meat, 85)))
+    println("testUpdateFood: " + testUpdateFood(Bird("Cacadoo", Meat)))
   }
 }

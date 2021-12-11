@@ -1,41 +1,39 @@
 import Functions.{testCircle, testRectangleCurried, testRectangleUc, currFunc}
 import HigherOrder.{testNTimes, plus, multiply, testAnonymousNTimes}
-import PatternMatching.{testIntToString, testIsMaxAndMoritz, testIsEven, tests}
+import PatternMatching.{testIntToString, testUpdateFood, testIsMaxAndMoritz, testIsEven, tests}
 
 object MainObject {
   def main(args: Array[String]): Unit = {
     // Function.scala
 
     println("Functions")
-    println(testCircle(8))
-    println(testRectangleCurried(8, 8))
-    println(testRectangleUc(8, 8))
+    println("testCircle: " +  testCircle(8))
+    println("testRectangleCurried: " +  testRectangleCurried(8, 8))
+    println("testRectangleUc: " + testRectangleUc(8, 8))
 
     // Зачем каррирование
     val rectangle = currFunc(8)
-//    println(rectangle)
-    println(rectangle(6))
-
+//    println("rectangle: " + rectangle)
+    println("rectangle: " + rectangle(6))
 
 
     println("\nHigherOrder")
-    println(testNTimes(plus, 2, 3, 2))
-    println(testNTimes(multiply, 2, 3, 2))
-    println(testAnonymousNTimes(3, 2, 5))
-
+    println("testNTimes: " + testNTimes(plus, 2, 3, 2))
+    println("testNTimes: " + testNTimes(multiply, 2, 3, 2))
+    println("testAnonymousNTimes: " + testAnonymousNTimes(3, 2, 5))
 
 
     println("\nPatternMatching")
-    println(testIntToString(1))
-    println(testIntToString(3))
-    println(testIntToString(10))
+    println("testIntToString: " + testIntToString(1))
+    println("testIntToString: " + testIntToString(3))
+    println("testIntToString: " + testIntToString(10))
 
-    println(testIsMaxAndMoritz("Max"))
-    println(testIsMaxAndMoritz("moritz"))
-    println(testIsMaxAndMoritz("Maximus"))
+    println("testIsMaxAndMoritz: " + testIsMaxAndMoritz("Max"))
+    println("testIsMaxAndMoritz: " + testIsMaxAndMoritz("moritz"))
+    println("testIsMaxAndMoritz: " + testIsMaxAndMoritz("Maximus"))
 
-    println(testIsEven(1))
-    println(testIsEven(8))
+    println("testIsEven: " + testIsEven(1))
+    println("testIsEven: " + testIsEven(8))
 
     tests()
 
